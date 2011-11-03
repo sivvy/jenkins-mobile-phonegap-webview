@@ -1,7 +1,5 @@
 package com.phonegap.example;
 
-//import android.app.Activity;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
@@ -19,14 +17,6 @@ public class PhoneGapExample extends DroidGap
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        
-//        super.init();
-//        setContentView(R.layout.main);
-//        WebView myWebView = (WebView) findViewById(R.id.phonegap_container);
-//        myWebView.getSettings().setJavaScriptEnabled(true);
-//        myWebView.setWebChromeClient(new WebChromeClient());
-//        View html = (View)super.appView.getParent();
-//        myWebView.addView(html);
         super.loadUrl("file:///android_asset/jenkins/index.html");
     }
 }
