@@ -4,44 +4,34 @@
 var jenkins = {};
 (function() {
 	//Default config
-	var Configuration = {
-		"Jenkins-Cot" : {
-			"title": "Jenkins-Cot",
-			"url" : "http://lcalink.dyndns.org/jenkins-cot/job/COT/rssAll",
-			"visible":true
-		},
-		"Jenkins-Dashboards" : {
-			"title": "Jenkins Dashboards",
-			"url" : "http://lcalink.dyndns.org/jenkins-cot/job/LUCIA_BI_dashboards/rssAll",
-			"visible":true
-		},
-		"Melinda" : {
-			"title": "Melinda",
-			"url" : "http://melinda.lcalink.com:8080/rssLatest",
-			"visible":true
-		},
-		"Lobster" : {
-			"title": "Lobster",
-			"url" : "http://lobster.lcalink.com:8080/rssLatest",
-			"visible":true
-		},/*
-		"error" : {
-			"title": "error",
-			"url" : "http://lcalink.dyndns.org/jenkins-cot/job/LUCIA_BI_dashboards/rssAll1111111111111111111111111111111",
-			"visible":true
-		},
-		"Emiko" : {
-			"title": "Emiko",
-			"url" : "http://emiko.lcalink.com:8080/rssLatest",
-			"visible":true
-		},
-		"Kaoru" : {
-			"title": "Kaoru",
-			"url" : "http://kaoru.lcalink.com:8080/rssLatest",
-			"visible":true
-		}*/
-	};
-        
+	
+ var Configuration = {
+	"Offical Jenkins All" : {
+		"title": "jenkins-all",
+		"url" : "http://ci.jenkins-ci.org/rssAll",
+		"visible":true
+	},
+	"Offical Jenkins Unstable" : {
+		"title": "jenkins-unstable",
+		"url" : "http://ci.jenkins-ci.org/view/All%20Unstable/rssAll",
+		"visible":true
+	},
+	 "Offical Jenkins Site" : {
+		"title": "jenkins-site",
+		"url" : "http://ci.jenkins-ci.org/view/All%20Site/rssAll",
+		"visible":true
+	 },
+	"Offical Jenkins Core" : {
+		"title": "jenkins-core",
+		"url" : "http://ci.jenkins-ci.org/view/Jenkins%20core/rssAll",
+		"visible":true
+	},
+	"Offical Jenkins Library" : {
+		 "title": "jenkins-library",
+		 "url" : "http://ci.jenkins-ci.org/view/Libraries/rssAll",
+		 "visible":true
+	 }
+ };
         Config = function(){
         	this.config = {};
         	this.configArray = [];
